@@ -1,6 +1,6 @@
 ---
-name: evcc
-version: 0.207.1
+name: evcc-alpening
+version: 0.207.2
 slug: evcc
 description: EV Charge Controller!
 url: https://github.com/evcc-io/evcc
@@ -20,7 +20,7 @@ ingress: true
 ingress_port: 7070
 init: false
 watchdog: http://[HOST]:[PORT:7070]/
-image: evcc/evcc
+image: ghcr.io/alpening/evcc
 options: 
   config_file: /config/evcc.yaml
   sqlite_file: /data/evcc.db
